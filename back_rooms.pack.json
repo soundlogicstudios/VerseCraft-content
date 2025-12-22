@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "storyId": "back_rooms",
+    "title": "The Back Rooms",
+    "subtitle": "A Liminal Horror Experience",
+    "author": "Original / Inspired",
+    "publicDomain": false,
+    "category": "core",
+    "theme": "liminal_horror",
+    "version": "0.1.0",
+    "estimatedLength": "30–90 minutes",
+    "entryNode": "intro",
+    "tags": []
+  },
+  "nodes": {
+    "intro": {
+      "text": "The Back Rooms — Starter stub. Replace this intro text with your real opening scene.",
+      "choices": [
+        {
+          "label": "Start",
+          "next": "scene_1"
+        }
+      ]
+    },
+    "scene_1": {
+      "text": "Scene 1 stub. Add real narrative + choices here.",
+      "choices": [
+        {
+          "label": "Continue",
+          "next": "ending_good"
+        }
+      ]
+    },
+    "ending_good": {
+      "text": "Stub ending.",
+      "ending": {
+        "type": "good",
+        "summary": "Stub end. Expand into full story."
+      }
+    }
+  }
+}

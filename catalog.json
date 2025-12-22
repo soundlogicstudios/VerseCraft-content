@@ -1,0 +1,93 @@
+{
+  "version": "0.1.0",
+  "packs": [
+    {
+      "storyId": "back_rooms",
+      "title": "The Back Rooms",
+      "subtitle": "A Liminal Horror Experience",
+      "theme": "liminal_horror",
+      "category": "core",
+      "version": "0.1.0",
+      "publicDomain": false,
+      "estimatedLength": "30–90 minutes",
+      "packFile": "back_rooms.pack.json"
+    },
+    {
+      "storyId": "code_blue",
+      "title": "Code Blue",
+      "subtitle": "A Hospital Romance",
+      "theme": "hospital_romance",
+      "category": "core",
+      "version": "0.1.0",
+      "publicDomain": false,
+      "estimatedLength": "30–90 minutes",
+      "packFile": "code_blue.pack.json"
+    },
+    {
+      "storyId": "creation_of_the_cosmos",
+      "title": "Creation of the Cosmos",
+      "subtitle": "A Mythic Origin Story",
+      "theme": "mythic",
+      "category": "core",
+      "version": "0.1.0",
+      "publicDomain": true,
+      "estimatedLength": "30–90 minutes",
+      "packFile": "creation_of_the_cosmos.pack.json"
+    },
+    {
+      "storyId": "crimson_seagull_ember_crown",
+      "title": "The Crimson Seagull and the Burning Ember Crown",
+      "subtitle": null,
+      "theme": "fantasy_pirate",
+      "category": "core",
+      "version": "0.1.0",
+      "publicDomain": false,
+      "estimatedLength": "30–90 minutes",
+      "packFile": "crimson_seagull_ember_crown.pack.json"
+    },
+    {
+      "storyId": "paint_the_sky",
+      "title": "Paint the Sky",
+      "subtitle": "An Oregon Trail Adventure",
+      "theme": "oregon_trail",
+      "category": "core",
+      "version": "0.1.0",
+      "publicDomain": true,
+      "estimatedLength": "30–90 minutes",
+      "packFile": "paint_the_sky.pack.json"
+    },
+    {
+      "storyId": "relic_of_sylara",
+      "title": "Relic of Sylara",
+      "subtitle": null,
+      "theme": "fantasy_relic",
+      "category": "core",
+      "version": "0.1.0",
+      "publicDomain": false,
+      "estimatedLength": "30–90 minutes",
+      "packFile": "relic_of_sylara.pack.json"
+    },
+    {
+      "storyId": "wasteland_story",
+      "title": "A Wasteland Story",
+      "subtitle": null,
+      "theme": "wasteland",
+      "category": "core",
+      "version": "0.1.0",
+      "publicDomain": false,
+      "estimatedLength": "30–90 minutes",
+      "packFile": "wasteland_story.pack.json"
+    },
+    {
+      "storyId": "world_of_lorecraft",
+      "title": "World of Lorecraft",
+      "subtitle": "The Book Between Stories",
+      "theme": "arcane",
+      "category": "core",
+      "version": "0.1.0",
+      "publicDomain": false,
+      "estimatedLength": "30–90 minutes",
+      "packFile": "world_of_lorecraft.pack.json"
+    }
+  ]
+}

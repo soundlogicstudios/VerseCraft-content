@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "storyId": "paint_the_sky",
+    "title": "Paint the Sky",
+    "subtitle": "An Oregon Trail Adventure",
+    "author": "Public Domain Adaptation",
+    "publicDomain": true,
+    "category": "core",
+    "theme": "oregon_trail",
+    "version": "0.1.0",
+    "estimatedLength": "30–90 minutes",
+    "entryNode": "intro",
+    "tags": []
+  },
+  "nodes": {
+    "intro": {
+      "text": "Paint the Sky — Starter stub. Replace this intro text with your real opening scene.",
+      "choices": [
+        {
+          "label": "Start",
+          "next": "scene_1"
+        }
+      ]
+    },
+    "scene_1": {
+      "text": "Scene 1 stub. Add real narrative + choices here.",
+      "choices": [
+        {
+          "label": "Continue",
+          "next": "ending_good"
+        }
+      ]
+    },
+    "ending_good": {
+      "text": "Stub ending.",
+      "ending": {
+        "type": "good",
+        "summary": "Stub end. Expand into full story."
+      }
+    }
+  }
+}

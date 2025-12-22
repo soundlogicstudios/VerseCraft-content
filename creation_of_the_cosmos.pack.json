@@ -1,0 +1,164 @@
+{
+  "meta": {
+    "storyId": "creation_of_the_cosmos",
+    "title": "Creation of the Cosmos",
+    "subtitle": "A Mythic Origin Story",
+    "author": "Public Domain",
+    "publicDomain": true,
+    "category": "core",
+    "theme": "mythic",
+    "version": "0.1.0",
+    "estimatedLength": "30–90 minutes",
+    "entryNode": "intro",
+    "tags": []
+  },
+  "nodes": {
+    "intro": {
+      "text": "Before the first sunrise, there is only silence—so complete it feels like a substance. Then a single thought appears, bright as a spark: something could exist.",
+      "choices": [
+        {
+          "label": "Name the first light",
+          "effects": {
+            "morale": 1
+          },
+          "next": "first_light"
+        },
+        {
+          "label": "Shape the first void",
+          "effects": {
+            "reputation": 1
+          },
+          "next": "first_void"
+        }
+      ]
+    },
+    "first_light": {
+      "text": "You name it, and it answers. Light pours outward, not as a flood, but as a promise—revealing that emptiness can be measured.",
+      "choices": [
+        {
+          "label": "Let the light spread",
+          "next": "spread"
+        },
+        {
+          "label": "Hold it close",
+          "effects": {
+            "morale": 1
+          },
+          "next": "hold_close"
+        }
+      ]
+    },
+    "first_void": {
+      "text": "You shape the void like a bowl, giving absence an edge. In the curve of nothing, you feel room for everything that will come.",
+      "choices": [
+        {
+          "label": "Invite matter into the hollow",
+          "next": "matter_invite"
+        },
+        {
+          "label": "Listen for an echo",
+          "effects": {
+            "morale": 1
+          },
+          "next": "echo"
+        }
+      ]
+    },
+    "spread": {
+      "text": "The light spreads until it meets itself. The first horizon forms—an idea made visible.",
+      "choices": [
+        {
+          "label": "Set the laws of motion",
+          "effects": {
+            "reputation": 1
+          },
+          "next": "laws"
+        },
+        {
+          "label": "Create a single star",
+          "effects": {
+            "morale": 1
+          },
+          "next": "star"
+        }
+      ]
+    },
+    "hold_close": {
+      "text": "You hold the light close, and it warms into color. In the glow, you can almost see the shapes of future worlds.",
+      "choices": [
+        {
+          "label": "Release it gently",
+          "next": "spread"
+        }
+      ]
+    },
+    "matter_invite": {
+      "text": "You invite matter, and the void answers with weight. Dust gathers into threads, threads into clouds, clouds into possibility.",
+      "choices": [
+        {
+          "label": "Ignite a star within the cloud",
+          "next": "star"
+        },
+        {
+          "label": "Let the cloud drift and learn",
+          "next": "echo"
+        }
+      ]
+    },
+    "echo": {
+      "text": "You listen. The echo is faint at first—a rhythm. A heartbeat. A pattern the universe can follow.",
+      "choices": [
+        {
+          "label": "Commit to the pattern",
+          "effects": {
+            "reputation": 1
+          },
+          "next": "laws"
+        }
+      ]
+    },
+    "laws": {
+      "text": "You set simple laws: movement, change, consequence. The cosmos becomes a story that can be continued.",
+      "choices": [
+        {
+          "label": "Begin the age of worlds",
+          "next": "ending_good_worlds"
+        }
+      ]
+    },
+    "star": {
+      "text": "A star ignites. It is lonely and magnificent. Around it, darkness becomes not an enemy—but a stage.",
+      "choices": [
+        {
+          "label": "Place worlds in its orbit",
+          "next": "ending_ambiguous_orbit"
+        },
+        {
+          "label": "Create a second star",
+          "next": "ending_bad_imbalance"
+        }
+      ]
+    },
+    "ending_good_worlds": {
+      "text": "Worlds begin. Not finished, not safe—only possible. The cosmos turns, and in its turning you recognize the oldest truth: creation is choice repeated.",
+      "ending": {
+        "type": "good",
+        "summary": "You establish order and open the door to endless stories."
+      }
+    },
+    "ending_ambiguous_orbit": {
+      "text": "You place worlds in orbit and watch them spin—beautiful, fragile, unsupervised. You’ve begun something you cannot control, and that might be the point.",
+      "ending": {
+        "type": "ambiguous",
+        "summary": "You create life’s stage, but let it evolve without guarantees."
+      }
+    },
+    "ending_bad_imbalance": {
+      "text": "You ignite a second star too close. Gravity argues. Heat rages. The first balance shatters into brilliance and ruin. Even gods can rush.",
+      "ending": {
+        "type": "bad",
+        "summary": "Creation collapses under impatience. The cosmos must restart."
+      }
+    }
+  }
+}

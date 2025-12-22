@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "storyId": "world_of_lorecraft",
+    "title": "World of Lorecraft",
+    "subtitle": "The Book Between Stories",
+    "author": "Original",
+    "publicDomain": false,
+    "category": "core",
+    "theme": "arcane",
+    "version": "0.1.0",
+    "estimatedLength": "30–90 minutes",
+    "entryNode": "intro",
+    "tags": []
+  },
+  "nodes": {
+    "intro": {
+      "text": "You open a book that isn’t on any shelf. Its pages are blank until you look at them—then they fill with choices you haven’t made yet.",
+      "choices": [
+        {
+          "label": "Learn how stories work",
+          "effects": {
+            "morale": 1
+          },
+          "next": "learn_choices"
+        },
+        {
+          "label": "Step into the nearest page",
+          "next": "ending_ambiguous_step_in"
+        }
+      ]
+    },
+    "learn_choices": {
+      "text": "A voice—calm, patient—explains: every node is a moment. Every choice points forward. Effects shape the traveler, not the text.",
+      "choices": [
+        {
+          "label": "Accept your role as traveler",
+          "effects": {
+            "reputation": 1
+          },
+          "next": "ending_good_ready"
+        },
+        {
+          "label": "Refuse and close the book",
+          "next": "ending_bad_closed"
+        }
+      ]
+    },
+    "ending_good_ready": {
+      "text": "The book warms in your hands. You don’t know what waits in the next story, but you understand the rules well enough to survive—and to create.",
+      "ending": {
+        "type": "good",
+        "summary": "You complete onboarding and unlock the VerseCraft mindset."
+      }
+    },
+    "ending_ambiguous_step_in": {
+      "text": "You step into a page mid-sentence. The world around you finishes the thought. You’re in the story now—and you don’t get to ask how it works until you choose.",
+      "ending": {
+        "type": "ambiguous",
+        "summary": "You skip the tutorial and learn by living the consequences."
+      }
+    },
+    "ending_bad_closed": {
+      "text": "You close the book. The room feels smaller immediately, as if possibilities have been removed from the air. For now, you remain outside the stories.",
+      "ending": {
+        "type": "bad",
+        "summary": "You reject the system and lose access to the worlds."
+      }
+    }
+  }
+}

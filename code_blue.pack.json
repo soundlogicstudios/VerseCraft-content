@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "storyId": "code_blue",
+    "title": "Code Blue",
+    "subtitle": "A Hospital Romance",
+    "author": "Original",
+    "publicDomain": false,
+    "category": "core",
+    "theme": "hospital_romance",
+    "version": "0.1.0",
+    "estimatedLength": "30–90 minutes",
+    "entryNode": "intro",
+    "tags": []
+  },
+  "nodes": {
+    "intro": {
+      "text": "Code Blue — Starter stub. Replace this intro text with your real opening scene.",
+      "choices": [
+        {
+          "label": "Start",
+          "next": "scene_1"
+        }
+      ]
+    },
+    "scene_1": {
+      "text": "Scene 1 stub. Add real narrative + choices here.",
+      "choices": [
+        {
+          "label": "Continue",
+          "next": "ending_good"
+        }
+      ]
+    },
+    "ending_good": {
+      "text": "Stub ending.",
+      "ending": {
+        "type": "good",
+        "summary": "Stub end. Expand into full story."
+      }
+    }
+  }
+}

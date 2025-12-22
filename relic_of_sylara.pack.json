@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "storyId": "relic_of_sylara",
+    "title": "Relic of Sylara",
+    "author": "Original",
+    "publicDomain": false,
+    "category": "core",
+    "theme": "fantasy_relic",
+    "version": "0.1.0",
+    "estimatedLength": "30–90 minutes",
+    "entryNode": "intro",
+    "tags": []
+  },
+  "nodes": {
+    "intro": {
+      "text": "The map is older than the kingdom that sold it to you. Its ink smells like cedar and smoke, and the name 'Sylara' is written where no name should be.",
+      "choices": [
+        {
+          "label": "Follow the map into the ruins",
+          "effects": {
+            "reputation": 1
+          },
+          "next": "ruins_gate"
+        },
+        {
+          "label": "Ask a local guide about Sylara",
+          "effects": {
+            "morale": 1
+          },
+          "next": "tavern_whisper"
+        }
+      ]
+    },
+    "tavern_whisper": {
+      "text": "The tavern falls quiet when you say the name. A guide finally speaks: 'Relics don't stay lost. They wait.'",
+      "choices": [
+        {
+          "label": "Hire the guide",
+          "effects": {
+            "supplies": -1
+          },
+          "next": "road_with_guide"
+        },
+        {
+          "label": "Go alone anyway",
+          "effects": {
+            "morale": -1
+          },
+          "next": "ruins_gate"
+        }
+      ]
+    },
+    "road_with_guide": {
+      "text": "With the guide ahead, the forest feels less like a threat and more like a test you can pass. Still, the birds have stopped singing.",
+      "choices": [
+        {
+          "label": "Approach the ruins at dusk",
+          "next": "ruins_gate"
+        }
+      ]
+    },
+    "ruins_gate": {
+      "text": "The ruins rise from the earth like broken teeth. A stone gate bears a carved eye that seems to follow you.",
+      "choices": [
+        {
+          "label": "Enter boldly",
+          "effects": {
+            "health": -1
+          },
+          "next": "dark_hall"
+        },
+        {
+          "label": "Search for a safer entrance",
+          "effects": {
+            "supplies": -1
+          },
+          "next": "hidden_passage"
+        }
+      ]
+    },
+    "dark_hall": {
+      "text": "Inside, the air is cold and dry. Your footsteps echo as if the place has been waiting for company.",
+      "choices": [
+        {
+          "label": "Continue deeper",
+          "next": "ending_ambiguous_relic_hint"
+        }
+      ]
+    },
+    "hidden_passage": {
+      "text": "You find a narrow crack behind fallen stone. It leads downward, tight and silent, but it avoids the main hall entirely.",
+      "choices": [
+        {
+          "label": "Squeeze through",
+          "next": "ending_good_found_path"
+        }
+      ]
+    },
+    "ending_good_found_path": {
+      "text": "The passage opens into a chamber lined with pale crystal. At its center, a pedestal waits—empty, but warm, as if something has only just been lifted from it.",
+      "ending": {
+        "type": "good",
+        "summary": "You find the relic’s trail and unlock the first true mystery of Sylara."
+      }
+    },
+    "ending_ambiguous_relic_hint": {
+      "text": "A faint glow pulses at the end of the hall—one slow heartbeat at a time. You cannot see the relic yet, but you can feel it noticing you.",
+      "ending": {
+        "type": "ambiguous",
+        "summary": "You reach the threshold. The relic is close, but not yours—yet."
+      }
+    }
+  }
+}
