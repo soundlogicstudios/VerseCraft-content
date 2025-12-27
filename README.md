@@ -1,42 +1,64 @@
-# VerseCraft Expo Minimal (Remote Content Test)
+VerseCraft
 
-This version can load stories from:
-- **Remote** GitHub RAW URLs (preferred), OR
-- **Local bundled** story packs (fallback)
+Creator Guide — Items & Inventory (v1.2.0)
 
-## 1) Upload content bundle to GitHub
-Upload the files from `versecraft-github-upload-bundle.zip` into your repo root:
-- catalog.json
-- *.pack.json
+Welcome!
+This guide explains how items, equipment, and inventory work in VerseCraft so your story behaves correctly in the app and plays nicely with other modules.
 
-## 2) Set your GitHub RAW base URL
-Open:
-- `src/config/content.ts`
+You do not need to know how the engine works.
+You just need to follow these rules when designing your story content.
 
-Replace:
-- `PASTE_YOUR_GITHUB_RAW_BASE_URL_HERE`
+⸻
 
-With:
-- `https://raw.githubusercontent.com/<YOU>/<REPO>/main`
+1. Inventory Categories (What You Can Create)
 
-## 3) Run the app
-```bash
-npm install
-npm run start
-```
+Every story supports the same five item categories.
 
-## 4) Test you are loading REMOTE
-- Open the app → Story Select screen.
-- You should see a banner: **Content: Remote (GitHub)**.
-- Tap a story → Details shows **REMOTE** in the meta line.
+Consumables
+	•	Used up when activated
+	•	Usually restore or change the story’s main resource
+	•	Examples:
+	•	Bandage
+	•	Coffee
+	•	Glimmer Tonic
+	•	Sedatives
 
-## 5) Test caching works
-- Open a story once (remote loads & caches).
-- Turn on Airplane Mode.
-- Re-open the story: it should still work (cached).
-- Back on Wi‑Fi, hit **Refresh** on Story Select to re-check remote.
+Items
+	•	General or narrative objects
+	•	May be usable or just carried
+	•	Examples:
+	•	Candle
+	•	Keycard
+	•	Medical Chart
+	•	Map Fragment
 
-## 6) Force refresh
-- Tap **Refresh** on Story Select to clear remote cache and refetch catalog.
+Weapons
+	•	Equipped to the Weapon slot
+	•	Examples:
+	•	Rusty Dagger
+	•	Scalpel
+	•	Revolver
 
-If remote fails (wrong URL / private repo / typo), the app automatically uses local bundled stories.
+Armor
+	•	Equipped to the Armor slot
+	•	Examples:
+	•	Leather Jerkin
+	•	Lab Coat
+	•	Hazmat Suit
+
+Special Items
+	•	Equipped to the Special Item slot
+	•	Story-important or symbolic
+	•	Examples:
+	•	Candle
+	•	Pager
+	•	Warden Sigil
+	•	Badge
+
+You cannot invent new categories in v1.2.0.
+
+⸻
+
+2. Inventory Limits (Important)
+
+To keep the game readable and balanced, there are hard limits:
